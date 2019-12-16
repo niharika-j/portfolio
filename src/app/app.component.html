@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand" (click)="scrollTo(home)">Niharika Jayanthi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" (click)="scrollTo(home)">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo(aboutMe)">About Me</a>
+        </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Work</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" (click)="scrollTo(contact)">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid bg-dark color-white" #home>
+  <div class="container">
+    <div class="row flex-container" style="height: 550px;">
+      <div class="col-sm-12 col-md-4">
+          <img class="profile-picture" src="assets/images/profile.jpg" width="450" />
+      </div>
+      <div class="col-sm-12 col-md-8">
+          <h1 class="display-4">UX Engineer</h1>
+          <p class="lead">I design, prototype and develop web and mobile applications.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid flex-container about-me-container" style="margin-bottom: 50px;" #aboutMe>
+  <div>
+      <h1 class="display-6">About Me</h1>
+  </div>
+  <div class="about-me-content">
+      <p>I am currently a student of Masters in Human-Computer Interaction program at Carnegie Mellon University, where I am learning about exciting topics such as User-Centered Research, Interaction Design, Human-AI Interaction and Interactive Data Science.
+      <!-- <br/><br/> -->
+      Before joining CMU, I worked as a Front-End Developer for three years at Tata Consultancy Services. I have experience with creating responsive websites and hybrid mobile applications using cutting-edge technologies like Angular, React and Ionic.</p>
+  </div>
+</div>
+<div class="container-fluid flex-container contact-container" style="margin-bottom: 50px;" #contact>
+    <div>
+        <h1 class="display-6">Get in touch!</h1>
+    </div>
+    <div>
+        <a class="contact-link" href="mailto:njayanth@andrew.cmu.edu"><i class="fas fa-envelope"></i></a>
+        <a class="contact-link" href="https://github.com/niharika-j" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="contact-link" href="https://www.linkedin.com/in/niharika-j/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>

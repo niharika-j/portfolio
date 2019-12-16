@@ -1,0 +1,41 @@
+.profile-picture {
+    border-radius: 50%;
+    display: inline;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+.color-white {
+    color: #f0f0f0;
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-me-content {
+    width: 800px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-link {
+    font-size: 30px;
+    margin: 20px;
+    color: #212529;
+}
